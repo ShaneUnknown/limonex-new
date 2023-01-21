@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Clásico",
+    "price": "S/. 2.00",
+    "get": "clasico"
+  },
+  {
+    "name": "Especial",
+    "price": "S/. 5.00",
+    "get": "especial"
+  },
+  {
+    "name": "Tuna",
+    "price": "S/. 3.00",
+    "get": "tuna"
+  },
+  {
+    "name": "Sábila",
+    "price": "S/. 4.00",
+    "get": "sabila"
+  },
+  {
+    "name": "Huesos y Articulaciones",
+    "price": "S/. 5.00",
+    "get": "huesos"
+  },
+  {
+    "name": "Colesterol e Hígado Graso",
+    "price": "S/. 4.00",
+    "get": "colesterol"
+  },
+  {
+    "name": "Riñones",
+    "price": "S/. 3.00",
+    "get": "rinones"
+  },
+  {
+    "name": "Laxante",
+    "price": "S/. 5.00",
+    "get": "laxante"
+  },
+  {
+    "name": "Gastritis",
+    "price": "S/. 5.00",
+    "get": "gastritis"
+  },
+  {
+    "name": "Adelgazante",
+    "price": "S/. 5.00",
+    "get": "adelgazante"
+  },
+  {
+    "name": "Relajante",
+    "price": "S/. 3.00",
+    "get": "relajante"
+  },
+  {
+    "name": "Antigripal / Tos",
+    "price": "S/. 5.00",
+    "get": "tos"
+  },
+  {
+    "name": "Infección Urinaria",
+    "price": "S/. 4.00",
+    "get": "infeccion"
+  },
+  {
+    "name": "Anticancerígeno",
+    "price": "S/. 5.00",
+    "get": "cancer"
+  },
+  {
+    "name": "Próstata",
+    "price": "S/. 4.00",
+    "get": "prostata"
+  },
+  {
+    "name": "Anemia",
+    "price": "S/. 5.00",
+    "get": "anemia"
+  }
+]

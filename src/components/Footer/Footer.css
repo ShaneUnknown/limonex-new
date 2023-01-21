@@ -1,0 +1,31 @@
+.Footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ddd;
+  text-align: center;
+}
+.Footer h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  border: 2px solid;
+  border-radius: 40px;
+  display: inline-block;
+  padding: 0 15px;
+  font-family: 'Lobster', cursive;
+  font-weight: 300;
+}
+.Footer p {
+  margin: 0;
+  font-size: 20px;
+}
+.Footer div {
+  height: 3px;
+  border: 2px solid #444;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.Footer .rights {
+  font-family: 'Lobster', cursive;
+  font-family: 30px;
+}

@@ -1,22 +1,23 @@
-import { useEffect, useState } from 'react'
-//import { useNavigate } from 'react-router-dom'
-
+import { useEffect, useState, useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { DetailsContext } from '../../context/DetailsProvider'
 import './BodyList.css'
 
-const BodyList = ({setShowDetails, setDetails}) => {
+const BodyList = () => {
   
-  //const navigate = useNavigate()
+  const navigate = useNavigate()
+  
+  const { setDetails } = useContext(DetailsContext)
   
   const [list, setList] = useState([])
   
   const clickItem = async (text) => {
-    //navigate('/details')
     const data = await fetch(`./DBLimonex/${text}.json`)
     const emoDet = await data.json()
     setDetails(emoDet)
     setTimeout(() => {
-      setShowDetails(true)
-    }, 200);
+      navigate('/details')
+    }, 150);
   }
   
   useEffect(() => {

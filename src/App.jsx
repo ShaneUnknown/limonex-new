@@ -8,9 +8,8 @@ import './App.css'
 const App = () => {
   return (
     <div className="App">
-    
+      <Home />
       <Routes>
-        <Route path="/" element={<Home />}/>
         <Route path="/details" element={<EmoDetails />}/>
       </Routes>
       

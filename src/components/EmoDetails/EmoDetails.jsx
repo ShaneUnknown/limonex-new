@@ -1,15 +1,17 @@
-import { useState } from 'react'
-//import { useNavigate } from 'react-router-dom'
-
+import { useState, useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { DetailsContext } from '../../context/DetailsProvider'
 import './EmoDetails.css'
 
-const EmoDetails = ({setShowDetails, details}) => {
-  //const navigate = useNavigate()
+const EmoDetails = () => {
+  const navigate = useNavigate()
+  
+  const { details } = useContext(DetailsContext)
   
   const [emo, setEmo] = useState(details)
   
   const btnClose = () => {
-    setShowDetails(false)
+    navigate('/')
   }
   
   return (
@@ -41,11 +43,11 @@ const EmoDetails = ({setShowDetails, details}) => {
         </div>
         
         <div className="bottom">
-          <h2 onClick={btnClose} className="close">
-            cerrar
-          </h2>
           <h2 className={"price " + emo.theme}>
             {emo.price}
+          </h2>
+          <h2 onClick={btnClose} className="close">
+            cerrar
           </h2>
         </div>
         

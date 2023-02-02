@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Uña de Gato",
+    "price": "S/. 5.00",
+    "get": "unadegato"
+  },
+  {
+    "name": "Boldo",
+    "price": "S/. 5.00",
+    "get": "boldo"
+  },
+  {
+    "name": "Chancapiedra",
+    "price": "S/. 5.00",
+    "get": "chanca"
+  },
+  {
+    "name": "Hercampuri",
+    "price": "S/. 5.00",
+    "get": "hercampuri"
+  },
+  {
+    "name": "Colágeno",
+    "price": "S/. 50.00",
+    "get": "colageno"
+  },
+  {
+    "name": "Polen",
+    "price": "S/. 15.00",
+    "get": "polen"
+  },
+  {
+    "name": "Miel de Abejas",
+    "price": "S/. 20.00",
+    "get": "miel"
+  },
+  {
+    "name": "Alcachofa",
+    "price": "S/. 30.00",
+    "get": "alcachofa"
+  },
+  {
+    "name": "Cúrcuma",
+    "price": "S/. 30.00",
+    "get": "curcuma"
+  },
+  {
+    "name": "Cardo Mariano",
+    "price": "S/. 30.00",
+    "get": "cardo"
+  },
+  {
+    "name": "BioProst",
+    "price": "S/. 30.00",
+    "get": "bioprost"
+  }
+]

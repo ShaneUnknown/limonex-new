@@ -1,0 +1,105 @@
+.ProdList {
+  padding: 5px;
+  padding-top: 10px;
+}
+.ProdList .item {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+  position: relative;
+  transition: .3s;
+}
+.ProdList .item.enter-anim {
+  transform: scale(0);
+  animation: prodList-item-anim-enter .2s linear;
+  animation-delay: calc(0.06s * var(--i));
+  animation-fill-mode: forwards;
+}
+@keyframes prodList-item-anim-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes prodList-item-anim {
+  0% { transform: scale(1); }
+  10% { transform: scale(1.1); }
+  30% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  70% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+.ProdList .item.anim {
+  animation: prodList-item-anim 1.5s infinite linear;
+}
+.ProdList .item:active {
+  transform: scale(.9);
+  background-color: #eee;
+}
+/*
+.ProdList .item .img {
+  height: 100px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  background-image:  url(emo_glass_blue.png);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: center;
+}*/
+.ProdList .item h3 {
+  margin: 0;
+}
+
+.ProdList .item .name {
+  font-size: 22px;
+}
+.ProdList .item .name::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  top: 0; left: 0;
+  background-color: #009900;
+}
+.ProdList .item:nth-child(5n+1) .name::before{
+  background-color: #0091ff;
+}
+.ProdList .item:nth-child(5n+2) .name::before{
+  background-color: #ff6e0d;
+}
+.ProdList .item:nth-child(5n+3) .name::before{
+  background-color: #c052ff;
+}
+.ProdList .item:nth-child(5n+5) .name::before{
+  background-color: #ff00b7;
+}
+
+.ProdList .item .price  {
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  background-color: #009900;
+  flex-shrink: 0;
+}
+.ProdList .item:nth-child(5n+1) .price {
+  background-color: #0091ff;
+}
+.ProdList .item:nth-child(5n+2) .price {
+  background-color: #ff6e0d;
+}
+.ProdList .item:nth-child(5n+3) .price {
+  background-color: #c052ff;
+}
+.ProdList .item:nth-child(5n+5) .price {
+  background-color: #ff00b7;
+}

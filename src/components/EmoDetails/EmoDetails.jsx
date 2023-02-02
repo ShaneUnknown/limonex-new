@@ -1,14 +1,14 @@
 import { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { DetailsContext } from '../../context/DetailsProvider'
+import { EmoContext } from '../../context/EmoProvider'
 import './EmoDetails.css'
 
 const EmoDetails = () => {
   const navigate = useNavigate()
   
-  const { details } = useContext(DetailsContext)
+  const { emodetails } = useContext(EmoContext)
   
-  const [emo, setEmo] = useState(details)
+  const [emo, setEmo] = useState(emodetails)
   
   const btnClose = () => {
     navigate('/')

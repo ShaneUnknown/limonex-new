@@ -2,81 +2,97 @@
   {
     "name": "Clásico",
     "price": "S/. 2.00",
+    "anim": "anim",
     "get": "clasico"
   },
   {
     "name": "Especial",
     "price": "S/. 5.00",
+    "anim": "",
     "get": "especial"
   },
   {
     "name": "Tuna",
     "price": "S/. 3.00",
+    "anim": "",
     "get": "tuna"
   },
   {
     "name": "Sábila",
     "price": "S/. 4.00",
+    "anim": "",
     "get": "sabila"
   },
   {
     "name": "Huesos y Articulaciones",
     "price": "S/. 5.00",
+    "anim": "",
     "get": "huesos"
   },
   {
     "name": "Colesterol e Hígado Graso",
     "price": "S/. 4.00",
+    "anim": "",
     "get": "colesterol"
   },
   {
     "name": "Riñones",
     "price": "S/. 3.00",
+    "anim": "",
     "get": "rinones"
   },
   {
     "name": "Laxante",
     "price": "S/. 5.00",
+    "anim": "",
     "get": "laxante"
   },
   {
     "name": "Gastritis",
     "price": "S/. 5.00",
+    "anim": "",
     "get": "gastritis"
   },
   {
     "name": "Adelgazante",
     "price": "S/. 5.00",
+    "anim": "",
     "get": "adelgazante"
   },
   {
     "name": "Relajante",
     "price": "S/. 3.00",
+    "anim": "",
     "get": "relajante"
   },
   {
     "name": "Antigripal / Tos",
     "price": "S/. 5.00",
+    "anim": "",
     "get": "tos"
   },
   {
     "name": "Infección Urinaria",
     "price": "S/. 4.00",
+    "anim": "",
     "get": "infeccion"
   },
   {
     "name": "Anticancerígeno",
     "price": "S/. 5.00",
+    "anim": "",
     "get": "cancer"
   },
   {
     "name": "Próstata",
     "price": "S/. 4.00",
+    "anim": "",
     "get": "prostata"
   },
   {
     "name": "Anemia",
     "price": "S/. 5.00",
+    "anim": "",
     "get": "anemia"
   }
 ]

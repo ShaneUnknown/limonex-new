@@ -17,6 +17,7 @@ const Footer = () => {
       <p className="rights">
         "©Limonex - Todos Los Derechos Reservados"
       </p>
+      <label>Febrero 2023</label>
     </div>
   )
 }

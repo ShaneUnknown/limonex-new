@@ -29,3 +29,7 @@
   font-family: 'Lobster', cursive;
   font-family: 30px;
 }
+.Footer label {
+  margin-top: 5px;
+  text-decoration: underline;
+}

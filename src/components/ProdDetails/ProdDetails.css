@@ -111,10 +111,11 @@
 .ProdDetails .content p {
   margin: 0;
   font-size: 20px;
-  border-bottom: 2px solid;
+  border-bottom: 4px solid;
   padding: 5px;
   margin-bottom: 5px;
   font-weight: bold;
+  border-bottom-style: dotted;
 }
 
 .ProdDetails .content p.blue {

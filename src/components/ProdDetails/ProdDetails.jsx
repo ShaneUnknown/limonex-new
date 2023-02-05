@@ -37,7 +37,7 @@ const ProdDetails = () => {
           </h2>
           <div className={prod.theme}>
             { prod.properties?.map((prop, index) =>
-                <p key={index}>
+                <p className={prod.theme} key={index}>
                   { prop }
                 </p>
               )

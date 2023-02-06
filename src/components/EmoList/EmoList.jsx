@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import { EmoContext } from '../../context/EmoProvider'
 
+import emolientes from '../../db/Emolientes/emolientes'
+
 import './EmoList.css'
 
 const EmoList = () => {
@@ -11,12 +13,12 @@ const EmoList = () => {
   
   const { emolist, setEmoList, setEmoDetails } = useContext(EmoContext)
   
-  const clickItem = async (text) => {
+  const clickItem = (i) => {
     localStorage.setItem("anim-list", "true")
     document.querySelector('.EmoList').children[0].classList.remove('anim')
-    const data = await fetch(`./DBLimonex/Emolientes/${text}.json`)
-    const emoDet = await data.json()
-    setEmoDetails(emoDet)
+    /*const data = await fetch(`./DBLimonex/Emolientes/${text}.json`)
+    const emoDet = await data.json()*/
+    setEmoDetails(emolientes[i])
     setTimeout(() => {
       navigate('/emodetails')
     }, 200);
@@ -35,28 +37,28 @@ const EmoList = () => {
       const items = document.querySelectorAll(".enter-anim") 
       for(const item of items) 
         item.classList.remove('enter-anim')
-    }, 1000)
+    }, 600)
   }
 
-  const GetItemsFixed = async () => {
+  const GetItemsFixed = async () => {/*
     const data = await fetch('./DBLimonex/Emolientes/emolientes.json')
-    const dataEmos = await data.json()
-    setEmoList(dataEmos)
+    const dataEmos = await data.json()*/
+    setEmoList(emolientes)
     CheckAnimHelp()
     RemoveEnterAnim()
   }
   
   useEffect(() => {
     GetItemsFixed()
-    //console.log('executed emo list')
+    //style={{"--i": key}}
   }, [])
   
   return (
     <div className="EmoList">
       {
-        emolist.map((item, key) =>
-          <div key={key} className="item enter-anim" onClick={() => clickItem(item.get)}
-            style={{"--i": key}}
+        emolist.map((item, i) =>
+          <div key={i} className="item enter-anim" onClick={() => clickItem(i)}
+            
           >
             <h3 className="name">
               { item.name }

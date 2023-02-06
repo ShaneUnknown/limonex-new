@@ -14,20 +14,14 @@
   transition: .3s;
 }
 .EmoList .item.enter-anim {
-  transform: scale(0);
-  animation: emolist-item-anim-enter .2s linear;
-  animation-delay: calc(0.06s * var(--i));
-  animation-fill-mode: forwards;
+  animation: emolist-item-anim-enter .6s linear;
 }
 @keyframes emolist-item-anim-enter {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  0% { transform: scale(0); }
+  30% { transform: scale(1.05); }
+  50% { transform: scale(.9); }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 @keyframes emolist-item-anim {
   0% { transform: scale(1); }

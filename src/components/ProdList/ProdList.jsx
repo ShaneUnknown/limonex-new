@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import { ProdContext } from '../../context/ProdProvider'
 
+import productos from '../../db/Productos/productos'
+
 import './ProdList.css'
 
 const ProdList = () => {
@@ -11,12 +13,13 @@ const ProdList = () => {
   
   const { prodlist, setProdList, setProdDetails } = useContext(ProdContext)
   
-  const clickItem = async (text) => {
+  const clickItem = (i) => {
     localStorage.setItem("anim-list", "true")
-    document.querySelector('.ProdList').children[0].classList.remove('anim')
+    document.querySelector('.ProdList').children[0].classList.remove('anim')/*
     const data = await fetch(`./DBLimonex/Productos/${text}.json`)
     const prodDet = await data.json()
-    setProdDetails(prodDet)
+    */
+    setProdDetails(productos[i])
     setTimeout(() => {
       navigate('/proddetails')
     }, 200);
@@ -27,13 +30,15 @@ const ProdList = () => {
       const items = document.querySelectorAll(".enter-anim") 
       for(const item of items) 
         item.classList.remove('enter-anim')
-    }, 1000)
+    }, 600)
   }
 
-  const GetItemsFixed = async () => {
+  const GetItemsFixed = () => {
+    /*
     const data = await fetch('./DBLimonex/Productos/productos.json')
     const prods = await data.json()
-    setProdList(prods)
+    */
+    setProdList(productos)
     RemoveEnterAnim()
   }
   
@@ -44,9 +49,8 @@ const ProdList = () => {
   return (
     <div className="ProdList">
       {
-        prodlist.map((item, key) =>
-          <div key={key} className="item enter-anim" onClick={() => clickItem(item.get)}
-            style={{"--i": key}}
+        prodlist.map((item, i) =>
+          <div key={i} className="item enter-anim" onClick={() => clickItem(i)}
           >
             <h3 className="name">
               { item.name }

@@ -30,6 +30,7 @@
   font-family: 30px;
 }
 .Footer label {
-  margin-top: 5px;
+  margin-top: 10px;
+  display: block;
   text-decoration: underline;
 }

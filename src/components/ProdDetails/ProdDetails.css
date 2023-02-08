@@ -29,19 +29,19 @@
   box-shadow: 2px 2px 4px rgba(0,0,0,.2);
 }
 .ProdDetails .name.blue {
-  border-top-color: #0082ec;
+  border-top-color: #008b9a;
 }
 .ProdDetails .name.orange {
-  border-top-color: #ff6e0d;
+  border-top-color: #925a00;
 }
 .ProdDetails .name.purple {
-  border-top-color: #ad1dff;
+  border-top-color: #8257ff;
 }
 .ProdDetails .name.green {
-  border-top-color: #009900;
+  border-top-color: #618d00;
 }
 .ProdDetails .name.pink {
-  border-top-color: #ff00b7;
+  border-top-color: #c92e2e;
 }
 
 .ProdDetails .content {
@@ -63,19 +63,19 @@
   box-shadow: none;
 }
 .ProdDetails .content h2.blue {
-  background-color: #0082ec;
+  background-color: #008b9a;
 }
 .ProdDetails .content h2.orange {
-  background-color: #ff6e0d;
+  background-color: #925a00;
 }
 .ProdDetails .content h2.purple {
-  background-color: #ad1dff;
+  background-color: #8257ff;
 }
 .ProdDetails .content h2.green {
-  background-color: #009900;
+  background-color: #618d00;
 }
 .ProdDetails .content h2.pink {
-  background-color: #ff00b7;
+  background-color: #c92e2e;
 }
 
 .ProdDetails .content h3 {
@@ -93,45 +93,44 @@
   padding-left: 4px;
 }
 .ProdDetails .content h3.blue {
-  border-left-color: #0082ec;
+  border-left-color: #008b9a;
 }
 .ProdDetails .content h3.orange {
-  border-left-color: #ff6e0d;
+  border-left-color: #925a00;
 }
 .ProdDetails .content h3.purple {
-  border-left-color: #ad1dff;
+  border-left-color: #8257ff;
 }
 .ProdDetails .content h3.green {
-  border-left-color: #009900;
+  border-left-color: #618d00;
 }
 .ProdDetails .content h3.pink {
-  border-left-color: #ff00b7;
+  border-left-color: #c92e2e;
 }
 
 .ProdDetails .content p {
   margin: 0;
   font-size: 20px;
-  border-bottom: 4px solid;
+  border-bottom: 3px solid;
   padding: 5px;
   margin-bottom: 5px;
   font-weight: bold;
-  border-bottom-style: dotted;
 }
 
 .ProdDetails .content p.blue {
-  border-bottom-color: #0082ec;
+  border-bottom-color: #008b9a;
 }
 .ProdDetails .content p.orange {
-  border-bottom-color: #ff6e0d;
+  border-bottom-color: #925a00;
 }
 .ProdDetails .content p.purple {
-  border-bottom-color: #ad1dff;
+  border-bottom-color: #8257ff;
 }
 .ProdDetails .content p.green {
-  border-bottom-color: #009900;
+  border-bottom-color: #618d00;
 }
 .ProdDetails .content p.pink {
-  border-bottom-color: #ff00b7;
+  border-bottom-color: #c92e2e;
 }
 .ProdDetails .content p:nth-last-child(1) {
   border: 0;
@@ -177,19 +176,19 @@
   padding: 5px 10px;
 }
 .ProdDetails .bottom .price.blue {
-  background-color: #0082ec;
+  background-color: #008b9a;
 }
 .ProdDetails .bottom .price.orange {
-  background-color: #ff6e0d;
+  background-color: #925a00;
 }
 .ProdDetails .bottom .price.purple {
-  background-color: #ad1dff;
+  background-color: #8257ff;
 }
 .ProdDetails .bottom .price.green {
-  background-color: #009900;
+  background-color: #618d00;
 }
 .ProdDetails .bottom .price.pink {
-  background-color: #ff00b7;
+  background-color: #c92e2e;
 }
 
 @media (min-width:500px) {

@@ -12,22 +12,39 @@
   box-shadow: 2px 2px 4px rgba(0,0,0,.2);
   position: relative;
   transition: .3s;
+  border-left: 5px solid;
 }
+.ProdList .item.blue {
+  border-left-color: #0091ff;
+}
+.ProdList .item.orange {
+  border-left-color: #e74b00;
+}
+.ProdList .item.purple {
+  border-left-color: #c052ff;
+}
+.ProdList .item.green {
+  border-left-color: #009900;
+}
+.ProdList .item.pink {
+  border-left-color: #ff00b7;
+}
+
 .ProdList .item.enter-anim {
-  animation: prodList-item-anim-enter .4s linear;
-  animation-delay: calc(.03s * var(--i));
+  animation: prodList-item-anim-enter .4s linear;/*
+  animation-delay: calc(.03s * var(--i));*/
 }
 @keyframes prodList-item-anim-enter {
   0% { transform: scale(0); }
-  50% { transform: scale(1.05); }/*
-  70% { transform: scale(.9); }*/
+  50% { transform: scale(1.05); }
+  70% { transform: scale(.9); }
   100% { transform: scale(1); }
 }
 @keyframes prodList-item-anim {
   0% { transform: scale(1); }
-  10% { transform: scale(1.1); }
+  10% { transform: scale(1.05); }
   30% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  50% { transform: scale(1.05); }
   70% { transform: scale(1); }
   100% { transform: scale(1); }
 }
@@ -53,47 +70,29 @@
 }
 
 .ProdList .item .name {
-  font-size: 22px;
-}
-.ProdList .item .name::before {
-  content: '';
-  position: absolute;
-  width: 5px;
-  height: 100%;
-  top: 0; left: 0;
-  background-color: #618d00;
-}
-.ProdList .item:nth-child(5n+1) .name::before{
-  background-color: #008b9a;
-}
-.ProdList .item:nth-child(5n+2) .name::before{
-  background-color: #925a00;
-}
-.ProdList .item:nth-child(5n+3) .name::before{
-  background-color: #8257ff;
-}
-.ProdList .item:nth-child(5n+5) .name::before{
-  background-color: #c92e2e;
+  font-size: 1.35em;
 }
 
 .ProdList .item .price  {
   border-radius: 30px;
   padding: 5px 10px;
   color: white;
-  font-size: 20px;
+  font-size: 1.25em;
   display: inline-block;
-  background-color: #618d00;
   flex-shrink: 0;
 }
-.ProdList .item:nth-child(5n+1) .price {
-  background-color: #008b9a;
+.ProdList .item .price.blue {
+  background-image: linear-gradient(#00d8ff, #0081e4);
 }
-.ProdList .item:nth-child(5n+2) .price {
-  background-color: #925a00;
+.ProdList .item .price.orange {
+  background-image: linear-gradient(#e79300, #df1a00);
 }
-.ProdList .item:nth-child(5n+3) .price {
-  background-color: #8257ff;
+.ProdList .item .price.purple {
+  background-image: linear-gradient(#7852ff, #e446ff);
 }
-.ProdList .item:nth-child(5n+5) .price {
-  background-color: #c92e2e;
+.ProdList .item .price.green {
+  background-image: linear-gradient(#00ce00, #007300);
+}
+.ProdList .item .price.pink {
+  background-image: linear-gradient(#ca0097, #ff00b7);
 }

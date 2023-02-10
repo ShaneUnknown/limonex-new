@@ -5,6 +5,7 @@
 .EmoList .item {
   background-color: #fff;
   padding: 10px;
+  padding-left: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,22 +13,38 @@
   box-shadow: 2px 2px 4px rgba(0,0,0,.2);
   position: relative;
   transition: .3s;
+  border-left: 5px solid;
+}
+.EmoList .item.blue {
+  border-left-color: #0091ff;
+}
+.EmoList .item.orange {
+  border-left-color: #e74b00;
+}
+.EmoList .item.purple {
+  border-left-color: #c052ff;
+}
+.EmoList .item.green {
+  border-left-color: #009900;
+}
+.EmoList .item.pink {
+  border-left-color: #ff00b7;
 }
 .EmoList .item.enter-anim {
-  animation: emolist-item-anim-enter .4s linear;
-  animation-delay: calc(.03s * var(--i));
+  animation: emolist-item-anim-enter .4s linear;/*
+  animation-delay: calc(.03s * var(--i));*/
 }
 @keyframes emolist-item-anim-enter {
   0% { transform: scale(0); }
-  50% { transform: scale(1.05); }/*
-  70% { transform: scale(.9); }*/
+  50% { transform: scale(1.05); }
+  70% { transform: scale(.9); }
   100% { transform: scale(1); }
 }
 @keyframes emolist-item-anim {
   0% { transform: scale(1); }
-  10% { transform: scale(1.1); }
+  10% { transform: scale(1.05); }
   30% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  50% { transform: scale(1.05); }
   70% { transform: scale(1); }
   100% { transform: scale(1); }
 }
@@ -53,34 +70,15 @@
 }
 
 .EmoList .item .name {
-  font-size: 22px;
-}
-.EmoList .item .name::before {
-  content: '';
-  position: absolute;
-  width: 5px;
-  height: 100%;
-  top: 0; left: 0;
-  background-color: #009900;
-}
-.EmoList .item:nth-child(5n+1) .name::before{
-  background-color: #0091ff;
-}
-.EmoList .item:nth-child(5n+2) .name::before{
-  background-color: #ff6e0d;
-}
-.EmoList .item:nth-child(5n+3) .name::before{
-  background-color: #c052ff;
-}
-.EmoList .item:nth-child(5n+5) .name::before{
-  background-color: #ff00b7;
+  font-size: 1.35em;
 }
 
 .EmoList .item .price  {
   border-radius: 30px;
   padding: 5px 10px;
   color: white;
-  font-size: 20px;
+  margin-left: 10px;
+  font-size: 1.25em;
   display: inline-block;
   background-color: #009900;
   flex-shrink: 0;
@@ -89,7 +87,7 @@
   background-color: #0091ff;
 }
 .EmoList .item:nth-child(5n+2) .price {
-  background-color: #ff6e0d;
+  background-color: #e74b00;
 }
 .EmoList .item:nth-child(5n+3) .price {
   background-color: #c052ff;

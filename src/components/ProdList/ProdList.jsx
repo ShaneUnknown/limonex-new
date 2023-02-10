@@ -50,13 +50,12 @@ const ProdList = () => {
     <div className="ProdList">
       {
         prodlist.map((item, i) =>
-          <div key={i} className="item enter-anim" onClick={() => clickItem(i)}
-            style={{"--i": i}}
+          <div key={i} className={"item enter-anim " + item.theme} onClick={() => clickItem(i)}
           >
             <h3 className="name">
               { item.name }
             </h3>
-            <h3 className="price">
+            <h3 className={"price " + item.theme}>
               { item.price }
             </h3>
           </div>

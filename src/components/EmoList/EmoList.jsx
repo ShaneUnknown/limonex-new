@@ -57,8 +57,7 @@ const EmoList = () => {
     <div className="EmoList">
       {
         emolist.map((item, i) =>
-          <div key={i} className="item enter-anim" onClick={() => clickItem(i)}
-            style={{"--i": i}}
+          <div key={i} className={"item enter-anim " + item.theme} onClick={() => clickItem(i)}
           >
             <h3 className="name">
               { item.name }

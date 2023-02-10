@@ -21,7 +21,7 @@
   margin: 0;
   position: relative;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 1.6em;
   border-top: 5px solid;
   background-color: #fff;
   display: inline-block;
@@ -32,7 +32,7 @@
   border-top-color: #0082ec;
 }
 .EmoDetails .name.orange {
-  border-top-color: #ff6e0d;
+  border-top-color: #e74b00;
 }
 .EmoDetails .name.purple {
   border-top-color: #ad1dff;
@@ -56,7 +56,7 @@
   color: #fff;
   display: inline-block;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 1.2em;
   padding: 5px 10px;
   margin-top: 0;
   margin-bottom: 10px;
@@ -66,7 +66,7 @@
   background-color: #0082ec;
 }
 .EmoDetails .content h2.orange {
-  background-color: #ff6e0d;
+  background-color: #e74b00;
 }
 .EmoDetails .content h2.purple {
   background-color: #ad1dff;
@@ -80,7 +80,7 @@
 
 .EmoDetails .content h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.2em;
   background-color: #fff;
   box-shadow: 2px 2px 4px rgba(0,0,0,.2);
   color: #000;
@@ -96,7 +96,7 @@
   border-left-color: #0082ec;
 }
 .EmoDetails .content h3.orange {
-  border-left-color: #ff6e0d;
+  border-left-color: #e74b00;
 }
 .EmoDetails .content h3.purple {
   border-left-color: #ad1dff;
@@ -110,7 +110,7 @@
 
 .EmoDetails .content p {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.2em;
   border-top: 5px solid;
   padding: 5px;
   box-shadow: 2px 2px 4px rgba(0,0,0,.2);
@@ -121,7 +121,7 @@
   border-top-color: #0082ec;
 }
 .EmoDetails .content p.orange {
-  border-top-color: #ff6e0d;
+  border-top-color: #e74b00;
 }
 .EmoDetails .content p.purple {
   border-top-color: #ad1dff;
@@ -160,11 +160,11 @@
   border-radius: 5px;
   margin: 0;
   box-shadow: none;
-  font-size: 22px;
+  font-size: 1.3em;
 }
 .EmoDetails .bottom .close {
-  color: #ff0000;
-  background-color: rgba(255,255,255,.8);
+  color: #fff;
+  background-color: #fa005d;
   padding: 5px 15px;
   border-radius: 30px;
   border: 3px solid;
@@ -176,7 +176,7 @@
   background-color: #0082ec;
 }
 .EmoDetails .bottom .price.orange {
-  background-color: #ff6e0d;
+  background-color: #e74b00;
 }
 .EmoDetails .bottom .price.purple {
   background-color: #ad1dff;

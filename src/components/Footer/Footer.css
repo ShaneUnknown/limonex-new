@@ -5,7 +5,7 @@
   text-align: center;
 }
 .Footer h2 {
-  font-size: 30px;
+  font-size: 1.8em;
   margin: 10px 0;
   border: 2px solid;
   border-radius: 40px;
@@ -16,7 +16,7 @@
 }
 .Footer p {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .Footer div {
   height: 3px;
@@ -27,7 +27,6 @@
 }
 .Footer .rights {
   font-family: 'Lobster', cursive;
-  font-family: 30px;
 }
 .Footer label {
   margin-top: 10px;

@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:wght@500&display=swap');
 
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat Alternates', Sans-Serif;
   user-select: none;
 }
+
+@media (max-width:300px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 @media (min-width:500px) {
   body {
     max-width: 60%;

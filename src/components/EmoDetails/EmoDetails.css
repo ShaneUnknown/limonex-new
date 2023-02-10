@@ -41,7 +41,7 @@
   border-top-color: #009900;
 }
 .EmoDetails .name.pink {
-  border-top-color: #ff00b7;
+  border-top-color: #e000a1;
 }
 
 .EmoDetails .content {
@@ -75,7 +75,7 @@
   background-color: #009900;
 }
 .EmoDetails .content h2.pink {
-  background-color: #ff00b7;
+  background-color: #e000a1;
 }
 
 .EmoDetails .content h3 {
@@ -105,7 +105,7 @@
   border-left-color: #009900;
 }
 .EmoDetails .content h3.pink {
-  border-left-color: #ff00b7;
+  border-left-color: #e000a1;
 }
 
 .EmoDetails .content p {
@@ -130,7 +130,7 @@
   border-top-color: #009900;
 }
 .EmoDetails .content p.pink {
-  border-top-color: #ff00b7;
+  border-top-color: #e000a1;
 }
 
 .EmoDetails .content.prop {
@@ -185,7 +185,13 @@
   background-color: #009900;
 }
 .EmoDetails .bottom .price.pink {
-  background-color: #ff00b7;
+  background-color: #e000a1;
+}
+
+@media (max-width:380px) {
+  .EmoDetails {
+    display: block;
+  }
 }
 
 @media (min-width:500px) {

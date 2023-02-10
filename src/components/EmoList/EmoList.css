@@ -22,13 +22,13 @@
   border-left-color: #e74b00;
 }
 .EmoList .item.purple {
-  border-left-color: #c052ff;
+  border-left-color: #ad1dff;
 }
 .EmoList .item.green {
   border-left-color: #009900;
 }
 .EmoList .item.pink {
-  border-left-color: #ff00b7;
+  border-left-color: #e000a1;
 }
 .EmoList .item.enter-anim {
   animation: emolist-item-anim-enter .4s linear;/*
@@ -90,8 +90,8 @@
   background-color: #e74b00;
 }
 .EmoList .item:nth-child(5n+3) .price {
-  background-color: #c052ff;
+  background-color: #ad1dff;
 }
 .EmoList .item:nth-child(5n+5) .price {
-  background-color: #ff00b7;
+  background-color: #e000a1;
 }
